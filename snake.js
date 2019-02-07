@@ -230,6 +230,8 @@
 				break;
 			case 40  :
 				nextDirection = 'down'
+			default: 
+				break;
 		}
 	}
 	function gameOver() {
