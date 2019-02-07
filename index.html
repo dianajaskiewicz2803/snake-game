@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Snake</title>
+		<link rel="stylesheet" href="snake.css">
+    </head>
+    <body>
+		<p class="walking-through">Możesz teraz przenikać przez ściany przez : <span id="counter"></span>s</p>
+		<div class="game-container">
+			<canvas id="game-area" width="460" height="460"></canvas>
+			<canvas id="maze-area" width="460" height="460"></canvas>
+			<canvas id="food-area" width="460" height="460"></canvas>
+			<canvas id="power-area" width="460" height="460"></canvas>
+			<p>Current score: <span id="current-score">0</span></p>
+		</div>
+		<div id="game-settings" class="game-settings__container">
+			<p></p>
+			<label>Wybierz prędkość węża (1-10)
+				<input id="speed-value" type="number" min="1" max="10" value="1" /> 
+			</label>
+			<label>Wybierz jednostkę x dla power-up
+				<input id="powerUPx" type="number" value="1" />
+			</label>
+			<label>Wybierz jednostkę y dla power-up w sekundach
+				<input id="powerUPy" type="number" value="1" />
+			</label>
+			<p>Wybierz poziom trudności: </p>
+			<label><input type="radio" name="level"  data-name="mazeFirst" data-ratio="1" checked />1</label>
+			<label><input type="radio" name="level"  data-name="mazeSecond" data-ratio="2" />2</label>
+			<label><input type="radio" name="level"  data-name="mazeThird" data-ratio="3" />3</label>
+			<label><input type="radio" name="level"  data-name="mazeFourth" data-ratio="4" />4</label>
+			<label><input type="radio" name="level"  data-name="mazeFifth" data-ratio="5" />5</label>
+			<button id="start-game">Start game</button>					
+		</div>
+		<table>
+			<thead>
+				<tr><td>5 najlepszych wyników:</td></tr>
+			</thead>
+			<tbody id="score-table"></tbody>
+		</table>
+		<script src="snake.js"></script>
+	</body>	 
+</html>
