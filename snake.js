@@ -308,7 +308,7 @@
 					},powerUPy*1000)
 				} 
 				else if (powerUpAction == '5') {
-					score = score+powerUPx*score;
+					score = score+powerUPx*1*snakeSpeed*levelRatio;
 					displayCurrentScore()
 				} 
 				else if(powerUpAction == '6') {
