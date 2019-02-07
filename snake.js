@@ -279,7 +279,6 @@
 				powerUp.y = '';
 				powerUp.x = '';
 				var powerUpAction = Math.floor(Math.random() * (6 - 1 + 1) + 1);
-				var powerUpAction = 3;
 				ptx.clearRect(0, 0, canvas.width, canvas.height);				
 				if(powerUpAction == '1') {
 					for(var i = 0; i<powerUPx; i++){
